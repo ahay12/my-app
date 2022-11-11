@@ -1,14 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import Identity from "../components/Identity";
 import Layout from "../components/Layout";
 import Card from "../components/Card";
 
 export default function Home() {
   return (
     <div className="font-open">
-      <Identity>Our Insurance</Identity>
-      <Layout>
+      <Layout pageTitle={"Home"}>
         {/* Start Hero */}
         <section id="home" className="relative">
           <div className="container">
@@ -71,12 +69,15 @@ export default function Home() {
         <section>
           <div className="container">
             <div className="bg-white">
-              <h1>TITLE</h1>
-              <p>lorem ipsum dolor</p>
-              <p>lorem ipsum dolor</p>
-              <p>lorem ipsum dolor</p>
-              <p>lorem ipsum dolor</p>
-              <p>lorem ipsum dolor</p>
+              <div className="ml-24">
+                <Image src={""} alt="image"></Image>
+                <h1>TITLE</h1>
+                <p>lorem ipsum dolor</p>
+                <p>lorem ipsum dolor</p>
+                <p>lorem ipsum dolor</p>
+                <p>lorem ipsum dolor</p>
+                <p>lorem ipsum dolor</p>
+              </div>
             </div>
           </div>
         </section>

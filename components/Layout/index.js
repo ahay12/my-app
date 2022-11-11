@@ -1,12 +1,14 @@
 import Header from "../Header";
-import { ReactNode } from "react";
+import Head from "next/head"
 
-// interface LayoutProps {
-//   children: ReactNode;
-// }
-export default function Layout({children}){
+export default function Layout({ children, pageTitle }) {
   return (
     <div>
+      <Head>
+        <title>Our Insurance | {pageTitle}</title>
+        <meta name="description" content="Asuransi Indonesia" />
+        <link rel="icon" href="/asuransi_1.png" />
+      </Head>
       <Header />
       <div>{children}</div>
       {/* <Footer/> */}

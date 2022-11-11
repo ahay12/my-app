@@ -20,7 +20,7 @@ export default function Header() {
           <div className="px-4 ml-10">
             <Link href={"/"} className="block py-6">
               <Image
-                src={"/asuransi_kesehatan.png"}
+                src={"/asuransi_1.png"}
                 alt="logo website"
                 width={70}
                 height={70}
