@@ -1,20 +1,31 @@
 import Link from "next/link";
 import Image from "next/image";
+import React, { useEffect } from "react";
 
 export default function Header() {
   function hamClick() {
     const hamburger = document.querySelector("#hamburger");
-
     hamburger.classList.toggle("hamburger-active");
   }
 
   function navClick() {
     const nav = document.querySelector("#nav-menu");
-
     nav.classList.toggle("hidden");
   }
+  const [scroll, setScroll] = React.useState(false);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      setScroll(window.pageYOffset === 0 ? false : true);
+      return () => (window.onscroll = null);
+    };
+  });
   return (
-    <header className="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <header
+      className={`bg-transparent absolute top-0 left-0 w-full flex items-center z-10 ${
+        scroll ? "navbar-fixed" : ""
+      }`}
+    >
       <div className="container">
         <div className="flex items-center justify-between relative">
           <div className="px-4 ml-10">
@@ -22,8 +33,8 @@ export default function Header() {
               <Image
                 src={"/asuransi_1.png"}
                 alt="logo website"
-                width={70}
-                height={70}
+                width={100}
+                height={100}
               ></Image>
             </Link>
           </div>
@@ -41,7 +52,7 @@ export default function Header() {
             </button>
             <nav
               id="nav-menu"
-              className="hidden nav-fixed absolute py-5 max-w-[250px] w-full right-0 top-full lg:static lg:bg-transparent lg:max-w-full md:block md:static md:max-w-full md:bg-transparent"
+              className="hidden absolute py-5 max-w-[250px] w-full right-0 top-full lg:static lg:bg-transparent lg:max-w-full md:block md:static md:max-w-full md:bg-transparent"
               onClick={navClick}
             >
               <ul className="block lg:flex lg:shadow-none lg:rounded-none md:flex md:shadow-none md:rounded-none">
@@ -85,8 +96,8 @@ export default function Header() {
                   <button className="bg-blue-500 rounded-md bg-gradient-to-tr hover:from-blue-500 hover:to-green-400 hover:scale-110 transition duration-300 ease-in-out">
                     <Link
                       href={"/masuk"}
-                      className="text-base text-white
-								py-2 mx-8 flex group-hover:text-black"
+                      className="text-base text-black
+								py-2 mx-8 flex group-hover:text-white"
                     >
                       Masuk
                     </Link>

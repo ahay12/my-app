@@ -7,13 +7,24 @@ module.exports = {
   ],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: "16px",
+      },
       backgroundImage: {
         "hero-pattern": "url('/public/Asuransi.png')",
       },
       fontFamily: {
         jose: ["Josefin Sans"],
         alfa: ["Alfa Slab One"],
-        open: ["Open Sans"]
+        open: ["Open Sans"],
+        header: ["Roboto"],
+      },
+      margin: {
+        900: "910px",
+      },
+      screens: {
+        "2xl": "1280px",
       },
     },
   },

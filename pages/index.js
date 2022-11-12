@@ -1,87 +1,84 @@
 import Image from "next/image";
 import Link from "next/link";
 import Layout from "../components/Layout";
-import Card from "../components/Card";
 
 export default function Home() {
   return (
-    <div className="font-open">
-      <Layout pageTitle={"Home"}>
-        {/* Start Hero */}
-        <section id="home" className="relative">
-          <div className="container">
-            <div className="flex mt-40 ml-32 mr-32 mb-72 items-center justify-between">
-              <div className="w-1/2">
-                <h1 className="font-jose text-5xl text-transparent bg-clip-text bg-gradient-to-tr from-green-400 to-blue-500">
-                  Our Insurance
-                </h1>
-                <p className="text-base text-black mt-4">
-                  <span className="text-bold text-red-500">
-                    Desc Company Here{" "}
-                  </span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                  voluptas, quod, quia, voluptates quae voluptatibus quibusdam
-                  voluptatum quidem quos quas quia. Quisquam, quae. Quisquam
-                  voluptates quae, quibusdam quia quod.
-                </p>
-                <Link href={"/registrasi"}>
-                  <button className="bg-gradient-to-tr from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400 hover:scale-110 transition duration-300 ease-in-out text-black px-6 py-3 rounded-lg mt-4">
-                    Daftar Insurance
-                  </button>
-                </Link>
-              </div>
-              <Card>
-                <div>
-                  <Image src={""} alt="image"></Image>
-                  <h1 className="text-2xl">Title</h1>
-                  <p>lorem ipsum dolor</p>
+    <Layout>
+      {/* Start Hero */}
+      <section className="w-full pt-36 pb-80 bg-[url('/family.jpg')] bg-cover">
+        <div className="container">
+          <div className="w-full items-center lg:w-1/2">
+            <h1 className="font-header text-6xl text-white font-bold mt-12">
+              Mengubah cara pandang masyarakat tentang asuransi
+            </h1>
+            {/* <Link href={"/registrasi"}>
+              <button className="bg-gradient-to-tr from-blue-500 to-green-400 hover:scale-110 transition duration-300 ease-in-out text-black px-6 py-3 rounded-lg mt-4 hover:text-white">
+                Daftar Insurance
+              </button>
+            </Link> */}
+          </div>
+          <div className="mt-5 mb-5">
+            <div>
+              <div className="text-white text-2xl">Daftar Ansuransi</div>
+            </div>
+          </div>
+          <div className="flex flex-row">
+            <div>
+              <Link href={"/"}>
+                <div className="w-36 h-36 relative py-3 bg-white rounded-lg shadow-lg">
+                  <div className="flex flex-col justify-around items-center pt-5">
+                    <Image src={"/health.svg"} width={50} height={100} />
+                    <h4>Asuransi Jiwa</h4>
+                    <h4>Bebas Rencana</h4>
+                  </div>
                 </div>
-                <div>
-                  <Image src={""} alt="image"></Image>
-                  <h1 className="text-2xl">Title</h1>
-                  <p>lorem ipsum dolor</p>
+              </Link>
+            </div>
+            <div className="ml-4">
+              <Link href={"/"}>
+                <div className="w-36 h-36 relative py-3 bg-white rounded-lg shadow-lg">
+                  <div className="flex flex-col justify-around items-center pt-5">
+                    <Image src={"/card.svg"} width={50} height={100} />
+                    <h4>Asuransi Kesehatan</h4>
+                    <h4>Bebas Rencana</h4>
+                  </div>
                 </div>
-              </Card>
-              {/* <Image
-                src={"/asuransi_1.png"}
-                width={500}
-                height={500}
-                className="container w-1/3 mr-24"
-              /> */}
+              </Link>
+            </div>
+            <div className="ml-4">
+              <Link href={"/"}>
+                <div className="w-36 h-36 relative py-3 bg-white rounded-lg shadow-lg">
+                  <div className="flex flex-col justify-around items-center pt-5">
+                    <Image src={"/chair.svg"} width={50} height={100} />
+                    <h4>Asuransi Kesehatan</h4>
+                    <h4>Bebas Rencana</h4>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <div className="ml-4">
+              <Link href={"/"}>
+                <div className="w-36 h-36 relative py-3 bg-white rounded-lg shadow-lg">
+                  <div className="flex flex-col justify-around items-center pt-5">
+                    <Image src={"/note.svg"} width={50} height={100} />
+                    <h4>Asuransi Jiwa</h4>
+                    <h4>Bebas Rencana</h4>
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
-        </section>
-        <section>
-          <div className="container">
-            <div className="w-full bg-gradient-to-tr from-green-400 to-blue-500">
-              <div className="ml-24">
-                <Image src={""} alt="image"></Image>
-                <h1 className="">TITLE</h1>
-                <p>lorem ipsum dolor</p>
-                <p>lorem ipsum dolor</p>
-                <p>lorem ipsum dolor</p>
-                <p>lorem ipsum dolor</p>
-                <p>lorem ipsum dolor</p>
+          <div className="mt-32">
+            <div className="text-white w-60 h-16 bg-orange-400 rounded-lg">
+              <div className="items-center justify-around pl-7 pt-5">
+                <h4>Temukan Produk Lainnya</h4>
               </div>
             </div>
           </div>
-        </section>
-        <section>
-          <div className="container">
-            <div className="bg-white">
-              <div className="ml-24">
-                <Image src={""} alt="image"></Image>
-                <h1>TITLE</h1>
-                <p>lorem ipsum dolor</p>
-                <p>lorem ipsum dolor</p>
-                <p>lorem ipsum dolor</p>
-                <p>lorem ipsum dolor</p>
-                <p>lorem ipsum dolor</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </Layout>
-    </div>
+        </div>
+      </section>
+      {/* End Hero */}
+    </Layout>
   );
 }
