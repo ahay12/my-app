@@ -60,9 +60,9 @@ export default function Header() {
                   <Link
                     href={"/"}
                     className="text-base text-black
-								py-2 mx-8 flex group-hover:text-blue-500"
+								py-2 mx-8 flex group-hover:text-blue-500 border-b-4 border-blue-500"
                   >
-                    Home
+                    <div className="px-2">Home</div>
                   </Link>
                 </li>
                 <li className="group">
