@@ -22,13 +22,13 @@ export default function Header() {
   });
   return (
     <header
-      className={`bg-transparent absolute top-0 left-0 w-full flex items-center z-10 ${
+      className={`bg-transparent absolute top-0 left-0 w-full h-24 flex items-center z-10 ${
         scroll ? "navbar-fixed" : ""
       }`}
     >
       <div className="container">
         <div className="flex items-center justify-between relative">
-          <div className="px-4 ml-10">
+          <div className="px-4">
             <Link href={"/"} className="block py-6">
               <Image
                 src={"/asuransi_1.png"}
@@ -93,10 +93,10 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="group">
-                  <button className="bg-blue-500 rounded-md bg-gradient-to-tr hover:from-blue-500 hover:to-green-400 hover:scale-110 transition duration-300 ease-in-out">
+                  <button className="bg-blue-700 rounded-md bg-gradient-to-tr hover:from-blue-500 hover:to-green-400 hover:scale-110 transition duration-300 ease-in-out">
                     <Link
                       href={"/masuk"}
-                      className="text-base text-black
+                      className="text-base text-white
 								py-2 mx-8 flex group-hover:text-white"
                     >
                       Masuk
