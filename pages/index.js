@@ -20,7 +20,9 @@ export default function Home() {
           </div>
           <div className="mt-5 mb-5">
             <div>
-              <div className="text-white text-2xl border-b-4 w-44">Daftar Asuransi</div>
+              <div className="text-white text-2xl border-b-4 w-44">
+                Daftar Asuransi
+              </div>
             </div>
           </div>
           <div className="flex flex-row">
@@ -91,9 +93,9 @@ export default function Home() {
           </div>
           <div className="mt-32">
             <Link href={"/"}>
-              <div className="text-white w-60 h-16 bg-orange-400 rounded-lg">
+              <div className="text-white w-60 h-16 bg-orange-400 rounded-lg hover:bg-white hover:text-orange-400">
                 <div className="items-center justify-around pl-7 pt-5">
-                  <h4>Temukan Produk Lainnya</h4>
+                  <h4 className="font-bold">Temukan Produk Lainnya</h4>
                 </div>
               </div>
             </Link>
