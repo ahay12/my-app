@@ -11,9 +11,6 @@ module.exports = {
         center: true,
         padding: "16px",
       },
-      backgroundImage: {
-        "hero-pattern": "url('/public/Asuransi.png')",
-      },
       fontFamily: {
         jose: ["Josefin Sans"],
         alfa: ["Alfa Slab One"],

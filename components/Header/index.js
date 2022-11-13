@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useEffect } from "react";
+import NavItems from "../NavItems";
 
 export default function Header() {
   function hamClick() {
@@ -55,45 +56,25 @@ export default function Header() {
               className="hidden absolute py-5 max-w-[250px] w-full right-0 top-full lg:static lg:bg-transparent lg:max-w-full md:block md:static md:max-w-full md:bg-transparent"
               onClick={navClick}
             >
-              <ul className="block lg:flex lg:shadow-none lg:rounded-none md:flex md:shadow-none md:rounded-none">
+              <ul className="block font-semibold lg:flex lg:shadow-none lg:rounded-none md:flex md:shadow-none md:rounded-none">
                 <li className="group">
-                  <Link
-                    href={"/"}
-                    className="text-base text-black
-								py-2 mx-8 flex group-hover:text-blue-500 border-b-4 border-blue-500"
-                  >
-                    <div className="px-2">Home</div>
-                  </Link>
+                  <NavItems
+                    linkPage={"/"}
+                    textLink="Home"
+                    style={"border-b-4 border-blue-500"}
+                  />
                 </li>
                 <li className="group">
-                  <Link
-                    href={"/about"}
-                    className="text-base text-black
-								py-2 mx-8 flex group-hover:text-blue-500"
-                  >
-                    About
-                  </Link>
+                  <NavItems linkPage={"/produk"} textLink="Produk" />
                 </li>
                 <li className="group">
-                  <Link
-                    href={"/produk"}
-                    className="text-base text-black
-								py-2 mx-8 flex group-hover:text-blue-500"
-                  >
-                    Produk
-                  </Link>
+                  <NavItems linkPage={"/about"} textLink="About" />
                 </li>
                 <li className="group">
-                  <Link
-                    href={"/contact"}
-                    className="text-base text-black
-								py-2 mx-8 flex group-hover:text-blue-500"
-                  >
-                    Contact
-                  </Link>
+                  <NavItems linkPage={"/contact"} textLink="Contact" />
                 </li>
                 <li className="group">
-                  <button className="bg-blue-700 rounded-md bg-gradient-to-tr hover:from-blue-500 hover:to-green-400 hover:scale-110 transition duration-300 ease-in-out">
+                  <button className="bg-blue-700 rounded-md bg-gradient-to-tr hover:from-blue-500 hover:to-green-400 hover:scale-110 transition duration-300 ease-in-out delay-150">
                     <Link
                       href={"/masuk"}
                       className="text-base text-white
