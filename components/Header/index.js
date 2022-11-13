@@ -71,7 +71,7 @@ export default function Header() {
                   <NavItems linkPage={"/about"} textLink="About" />
                 </li>
                 <li className="group">
-                  <NavItems linkPage={"/contact"} textLink="Contact" />
+                  <NavItems linkPage={"/bantuan"} textLink="Bantuan" />
                 </li>
                 <li className="group">
                   <button className="bg-blue-700 rounded-md bg-gradient-to-tr hover:from-blue-500 hover:to-green-400 hover:scale-110 transition duration-300 ease-in-out delay-150">

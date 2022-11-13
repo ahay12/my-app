@@ -101,11 +101,30 @@ export default function Home() {
               Pilih produk sesuai kebutuhan kamu
             </h1>
             <div className="flex flex-row justify-center">
-              <CardProduct link={"/"}></CardProduct>
-              <CardProduct link={"/"}></CardProduct>
-              <CardProduct link={"/"}></CardProduct>
-              <CardProduct link={"/"}></CardProduct>
-              <CardProduct link={"/"}></CardProduct>
+              <CardProduct link={"/"}>
+                <div className="flex flex-col items-center pt-10 font-semibold">
+                  <Image src={"/health.svg"} width={70} height={100} />
+                  <h1>Asuransi Jiwa</h1>
+                </div>
+              </CardProduct>
+              <CardProduct link={"/"}>
+                <div className="flex flex-col items-center pt-10 font-semibold">
+                  <Image src={"/card.svg"} width={70} height={100} />
+                  <h1>Asuransi Kesehatan</h1>
+                </div>
+              </CardProduct>
+              <CardProduct link={"/"}>
+                <div className="flex flex-col items-center pt-10 font-semibold">
+                  <Image src={"/chair.svg"} width={70} height={100} />
+                  <h1>Asuransi Kecelakaan Diri</h1>
+                </div>
+              </CardProduct>
+              <CardProduct link={"/"}>
+                <div className="flex flex-col items-center pt-10 font-semibold">
+                  <Image src={"/note.svg"} width={70} height={100} />
+                  <h1>Asuransi Investasi</h1>
+                </div>
+              </CardProduct>
             </div>
           </div>
         </div>
@@ -117,9 +136,10 @@ export default function Home() {
           <h1 className="text-4xl container font-semibold pt-20">
             Yang beda dari lain
           </h1>
-          <div className="container pt-44">
+          <div className="container pt-32 pb-32">
             <div className="flex flex-row">
               <div className="px-5">
+                <Image src={"/innovation.png"} width={100} height={50} />
                 <h1 className="text-2xl font-bold">Produk yang inovatif</h1>
                 <p>
                   Kami menawarkan produk yang mudah dipahami dengan sedikit
@@ -127,14 +147,16 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <h1 className="text-2xl font-bold">Produk yang inovatif</h1>
+                <Image src={"/hourglass.png"} width={100} height={50} />
+                <h1 className="text-2xl font-bold">Proses claim mudah</h1>
                 <p>
                   Kami menawarkan produk yang mudah dipahami dengan sedikit
                   pengecualian
                 </p>
               </div>
               <div>
-                <h1 className="text-2xl font-bold">Produk yang inovatif</h1>
+                <Image src={"/digital.png"} width={100} height={50} />
+                <h1 className="text-2xl font-bold">Asuransi digital</h1>
                 <p>
                   Kami menawarkan produk yang mudah dipahami dengan sedikit
                   pengecualian
