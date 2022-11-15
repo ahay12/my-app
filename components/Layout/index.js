@@ -11,7 +11,6 @@ export default function Layout({ children, pageTitle }) {
       </Head>
       <Header />
       {children}
-      {/* <Footer/> */}
     </>
   );
 }

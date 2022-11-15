@@ -65,18 +65,18 @@ export default function Header() {
                   />
                 </li>
                 <li className="group">
-                  <NavItems linkPage={"/produk"} textLink="Produk" />
+                  <NavItems linkPage={"/"} textLink="Produk" />
                 </li>
                 <li className="group">
-                  <NavItems linkPage={"/about"} textLink="About" />
+                  <NavItems linkPage={"/tentang-kami"} textLink="Tentang Kami" />
                 </li>
                 <li className="group">
-                  <NavItems linkPage={"/bantuan"} textLink="Bantuan" />
+                  <NavItems linkPage={"/"} textLink="Bantuan" />
                 </li>
                 <li className="group">
                   <button className="bg-blue-700 rounded-md bg-gradient-to-tr hover:from-blue-500 hover:to-green-400 hover:scale-110 transition duration-300 ease-in-out delay-150">
                     <Link
-                      href={"/masuk"}
+                      href={"/"}
                       className="text-base text-white
 								py-2 mx-8 flex group-hover:text-white"
                     >

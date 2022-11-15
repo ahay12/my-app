@@ -11,12 +11,6 @@ module.exports = {
         center: true,
         padding: "16px",
       },
-      fontFamily: {
-        jose: ["Josefin Sans"],
-        alfa: ["Alfa Slab One"],
-        open: ["Open Sans"],
-        header: ["Roboto"],
-      },
       margin: {
         900: "910px",
       },
