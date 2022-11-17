@@ -1,3 +1,4 @@
+import Dropbox from "../components/Dropbox";
 import Image from "next/image";
 import Link from "next/link";
 import CardHero from "../components/CardHero";
@@ -5,6 +6,7 @@ import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import CardProduct from "../components/Product";
 import Slider from "../components/Slider";
+import Popup from "../components/Popup";
 
 export default function Home() {
   return (
@@ -27,37 +29,37 @@ export default function Home() {
             </div>
             <div className="flex lg:flex-row  md:flex-row sm:flex-col">
               <CardHero
-                link={"/"}
-                icon={"/health.svg"}
-                title="Asurans Jiwa"
+                link={""}
+                con={"/health.svg"}
+                title="Asuransi Jiwa"
                 description="Bebas Rencana"
                 discount="Diskon 20%"
               />
               <CardHero
-                link={"/"}
-                icon={"/card.svg"}
+                link={""}
+                con={"/card.svg"}
                 title="Asuransi Kesehatan"
                 description="Asuransi Bebas Handal"
                 discount="Diskon 15%"
               />
 
               <CardHero
-                link={"/"}
-                icon={"/chair.svg"}
-                title="Asurans Jiwa"
+                link={""}
+                con={"/chair.svg"}
+                title="Asuransi Jiwa"
                 description="Bebas Rencana"
                 discount="Diskon 30%"
               />
               <CardHero
-                link={"/"}
-                icon={"/note.svg"}
-                title="Asurans Jiwa"
+                link={""}
+                con={"/note.svg"}
+                title="Asuransi Jiwa"
                 description="Bebas Rencana"
                 discount="Diskon 10%"
               />
             </div>
             <div className="mt-32">
-              <Link href={"/"}>
+              <Link href={""}>
                 <div className="text-white w-60 h-16 bg-orange-400 rounded-lg transition hover:bg-white hover:text-orange-400">
                   <div className="items-center justify-around pl-7 pt-5">
                     <h4 className="font-bold">Temukan Produk Lainnya</h4>
@@ -101,37 +103,18 @@ export default function Home() {
         {/* End Carousel */}
 
         {/* Start Produk */}
-        <section>
+        <section id="produk">
           <div className="z-auto w-full h-auto bg-gray-300 pb-10">
             <div className="flex flex-col container justify-center text-center">
               <h1 className="font-semibold text-4xl pt-52">
                 Pilih produk sesuai kebutuhan kamu
               </h1>
               <div className="flex flex-row justify-center">
-                <CardProduct link={"/"}>
-                  <div className="flex flex-col items-center pt-10 font-semibold">
-                    <Image src={"/health.svg"} width={70} height={100} />
-                    <h1>Asuransi Jiwa</h1>
-                  </div>
-                </CardProduct>
-                <CardProduct link={"/"}>
-                  <div className="flex flex-col items-center pt-10 font-semibold">
-                    <Image src={"/card.svg"} width={70} height={100} />
-                    <h1>Asuransi Kesehatan</h1>
-                  </div>
-                </CardProduct>
-                <CardProduct link={"/"}>
-                  <div className="flex flex-col items-center pt-10 font-semibold">
-                    <Image src={"/chair.svg"} width={70} height={100} />
-                    <h1>Asuransi Kecelakaan Diri</h1>
-                  </div>
-                </CardProduct>
-                <CardProduct link={"/"}>
-                  <div className="flex flex-col items-center pt-10 font-semibold">
-                    <Image src={"/note.svg"} width={70} height={100} />
-                    <h1>Asuransi Investasi</h1>
-                  </div>
-                </CardProduct>
+                <Popup title={"Asuransi Jiwa"} titleChd={"Asuransi Jiwa"} img={"/health.svg"}/>
+                <Popup title={"Asuransi Kesehatan"} titleChd={"Asuransi Kesehatan"} img={"/card.svg"}/>
+                <Popup title={"Asuransi Kecelakaan Diri"} titleChd={"Asuransi Kecelakaan Diri"} img={"/note.svg"}/>
+                <Popup title={"Asuransi Investasi"} titleChd={"Asuransi Investasi"} img={"/note.svg"}/>
+                <Popup title={"Asuransi Pendidikan"} titleChd={"Asuransi Pendidikan"} img={"/chair.svg"}/>
               </div>
             </div>
           </div>
@@ -173,6 +156,14 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/*start tentang kami */}
+        <section id="tentang-kami">
+          <div className="flex flex-col container pb-5">
+            <Dropbox />
+          </div>
+        </section>
+        {/* end tentang kami */}
       </Layout>
       <Footer />
     </>

@@ -4,7 +4,7 @@ import Image from "next/image";
 // const myLoader = ({ src, width, quality }) => {
 //   return `${src}?w=${width}&q=${quality || 75}`;
 // };
-export default function CardHero({ title, description, icon, link, discount }) {
+export default function CardHero({ title, description, con, link, discount }) {
   return (
     <div className="ml-4 mt-10">
       <Link href={link}>
@@ -13,7 +13,7 @@ export default function CardHero({ title, description, icon, link, discount }) {
             <h1 className="mt-2">{discount}</h1>
           </div>
           <div className="flex flex-col justify-around text-center items-center pt-2">
-            <Image src={icon} width={50} height={100} alt="icon" />
+            <Image src={con} width={50} height={100} alt="icon" />
             <h4>{title}</h4>
             <h4 className="font-bold">{description}</h4>
           </div>

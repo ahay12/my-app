@@ -10,7 +10,7 @@ body {
   /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   scroll-behavior: smooth;
-}
+  }
 
 a {
   color: inherit;
@@ -77,10 +77,10 @@ body {
   
 }
 .number-slide2 {
-  background: rgb(231, 133, 53);
+  background: rgb(84, 255, 181);
   
 }
 .number-slide3 {
-  background: rgb(231, 133, 53);
+  background: rgb(86, 151, 255);
   
 }
