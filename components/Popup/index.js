@@ -3,7 +3,6 @@ import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import CardProduct from "../Product";
 import Image from "next/image";
@@ -19,7 +18,7 @@ const style = {
   boxShadow: 24,
   p: 4,
   display: "flex",
-  flexDirection: "row",
+  flexDirection: "column",
 };
 
 export default function TransitionsModal({ title, img, titleChd }) {
