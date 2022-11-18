@@ -4,7 +4,6 @@ import Link from "next/link";
 import CardHero from "../components/CardHero";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
-import CardProduct from "../components/Product";
 import Slider from "../components/Slider";
 import Popup from "../components/Popup";
 
@@ -110,11 +109,31 @@ export default function Home() {
                 Pilih produk sesuai kebutuhan kamu
               </h1>
               <div className="flex flex-row justify-center">
-                <Popup title={"Asuransi Jiwa"} titleChd={"Asuransi Jiwa"} img={"/health.svg"}/>
-                <Popup title={"Asuransi Kesehatan"} titleChd={"Asuransi Kesehatan"} img={"/card.svg"}/>
-                <Popup title={"Asuransi Kecelakaan Diri"} titleChd={"Asuransi Kecelakaan Diri"} img={"/note.svg"}/>
-                <Popup title={"Asuransi Investasi"} titleChd={"Asuransi Investasi"} img={"/note.svg"}/>
-                <Popup title={"Asuransi Pendidikan"} titleChd={"Asuransi Pendidikan"} img={"/chair.svg"}/>
+                <Popup
+                  title={"Asuransi Jiwa"}
+                  titleChd={"Asuransi Jiwa"}
+                  img={"/health.svg"}
+                />
+                <Popup
+                  title={"Asuransi Kesehatan"}
+                  titleChd={"Asuransi Kesehatan"}
+                  img={"/card.svg"}
+                />
+                <Popup
+                  title={"Asuransi Kecelakaan Diri"}
+                  titleChd={"Asuransi Kecelakaan Diri"}
+                  img={"/note.svg"}
+                />
+                <Popup
+                  title={"Asuransi Investasi"}
+                  titleChd={"Asuransi Investasi"}
+                  img={"/note.svg"}
+                />
+                <Popup
+                  title={"Asuransi Pendidikan"}
+                  titleChd={"Asuransi Pendidikan"}
+                  img={"/chair.svg"}
+                />
               </div>
             </div>
           </div>
@@ -159,8 +178,10 @@ export default function Home() {
 
         {/*start tentang kami */}
         <section id="tentang-kami">
-          <div className="flex flex-col container pb-5">
-            <Dropbox />
+          <div className="bg-gray-600 py-7">
+            <div className="flex flex-col container pb-5">
+              <Dropbox />
+            </div>
           </div>
         </section>
         {/* end tentang kami */}
