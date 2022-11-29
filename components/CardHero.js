@@ -4,9 +4,9 @@ import Image from "next/image";
 // const myLoader = ({ src, width, quality }) => {
 //   return `${src}?w=${width}&q=${quality || 75}`;
 // };
-export default function CardHero({ title, description, con, link, discount }) {
+export default function CardHero({ title, description, con, link, discount, selector }) {
   return (
-    <div className="ml-4 mt-10">
+    <div id={selector} className="ml-4 mt-10">
       <Link href={link}>
         <div className="w-36 h-36 relative py-3 bg-white rounded-lg shadow-lg hover:bg-orange-400 hover:text-white">
           <div className="bg-green-300 text-sm w-24 h-8 rounded-lg -mt-11 ml-6 text-center font-bold text-black">

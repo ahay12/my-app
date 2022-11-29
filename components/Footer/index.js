@@ -1,8 +1,14 @@
+import Link from "next/link";
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer>
-      <div className="bg-gray-700 relative w-full h-80 bottom-0">
+      <div className="bg-gray-700 relative w-full h-96 bottom-0">
         <div className="text-white container flex flex-row">
+          <div className="pt-20">
+            <Image src={"/logo-fix.png"} width={500} height={500} />
+          </div>
           <div className="text-white container flex flex-col px-10 pt-3">
             <h1 className="text-4xl">Services</h1>
             <ul className="py-6">
@@ -38,16 +44,35 @@ export default function Footer() {
           </div>
         </div>
         <div className="container">
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-2 justify-items-center">
             <div>
-              <p className="text-white">
-                Syarat Penggunaan Kebijakan Privasi Hubungi Kami
+              <p className="text-white mt-3">
+                Syarat Penggunaan | Kebijakan Privasi | Hubungi Kami
               </p>
             </div>
-            <div>
-              <p className="text-white">
-                Syarat Penggunaan Kebijakan Privasi Hubungi Kami
-              </p>
+            <div className="">
+              <ul className="flex flex-row">
+                <l1>
+                  <Link href={"/"}>
+                    <Image src="/facebook.svg" width={40} height={25} />
+                  </Link>
+                </l1>
+                <l1 className="pl-4">
+                  <Link href={"/"}>
+                    <Image src="/facebook.svg" width={40} height={25}></Image>
+                  </Link>
+                </l1>
+                <l1 className="pl-4">
+                  <Link href={"/"}>
+                    <Image src="/facebook.svg" width={40} height={25}></Image>
+                  </Link>
+                </l1>
+                <l1 className="pl-4">
+                  <Link href={"/"}>
+                    <Image src="/facebook.svg" width={40} height={25}></Image>
+                  </Link>
+                </l1>
+              </ul>
             </div>
           </div>
         </div>

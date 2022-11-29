@@ -33,10 +33,10 @@ export default function Header() {
             <div className="px-4">
               <Link href={"/"} className="block py-6">
                 <Image
-                  src={"/asuransi_1.png"}
+                  src={"/logo-fix.png"}
                   alt="logo website"
-                  width={100}
-                  height={100}
+                  width={59}
+                  height={50}
                 ></Image>
               </Link>
             </div>

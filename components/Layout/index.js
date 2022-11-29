@@ -5,9 +5,9 @@ export default function Layout({ children, pageTitle }) {
   return (
     <>
       <Head>
-        <title>Our Insurance | {pageTitle}</title>
+        <title>Bumi Samudra Insurance | {pageTitle}</title>
         <meta name="description" content="Asuransi Indonesia" />
-        <link rel="icon" href="/asuransi_1.png" />
+        <link rel="icon" href="/logo-fix.png" />
       </Head>
       <Header />
       {children}

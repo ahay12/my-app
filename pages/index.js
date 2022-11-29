@@ -6,16 +6,23 @@ import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import Slider from "../components/Slider";
 import Popup from "../components/Popup";
-
+import React from "react";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 export default function Home() {
   return (
     <>
       <Layout pageTitle={"Home"}>
         {/* Start Hero */}
-        <section className="w-full h-auto pt-36 pb-10 bg-[url('/family.jpg')] lg:bg-cover">
+        <section
+          id="section-hero"
+          className="w-screen h-auto pt-36 pb-10 bg-[url('/family.jpg')] lg:bg-cover hero"
+        >
           <div className="container">
             <div className="w-full items-center lg:w-1/2">
-              <h1 className="font-bold text-6xl text-white mt-12">
+              <h1
+                id="title-hero"
+                className="font-bold text-6xl text-white mt-12"
+              >
                 Mengubah cara pandang masyarakat tentang asuransi
               </h1>
             </div>
@@ -28,6 +35,7 @@ export default function Home() {
             </div>
             <div className="flex lg:flex-row  md:flex-row sm:flex-col">
               <CardHero
+                selector={"card1"}
                 link={""}
                 con={"/health.svg"}
                 title="Asuransi Jiwa"
@@ -35,6 +43,7 @@ export default function Home() {
                 discount="Diskon 20%"
               />
               <CardHero
+                selector={"card2"}
                 link={""}
                 con={"/card.svg"}
                 title="Asuransi Kesehatan"
@@ -43,6 +52,7 @@ export default function Home() {
               />
 
               <CardHero
+                selector={"card3"}
                 link={""}
                 con={"/chair.svg"}
                 title="Asuransi Jiwa"
@@ -50,6 +60,7 @@ export default function Home() {
                 discount="Diskon 30%"
               />
               <CardHero
+                selector={"card4"}
                 link={""}
                 con={"/note.svg"}
                 title="Asuransi Jiwa"
@@ -58,7 +69,7 @@ export default function Home() {
               />
             </div>
             <div className="mt-32">
-              <Link href={""}>
+              <Link href={"#produk"}>
                 <div className="text-white w-60 h-16 bg-orange-400 rounded-lg transition hover:bg-white hover:text-orange-400">
                   <div className="items-center justify-around pl-7 pt-5">
                     <h4 className="font-bold">Temukan Produk Lainnya</h4>
@@ -103,7 +114,7 @@ export default function Home() {
 
         {/* Start Produk */}
         <section id="produk">
-          <div className="z-auto w-full h-auto bg-gray-300 pb-10">
+          <div className="w-full h-auto bg-gray-300 pb-10">
             <div className="flex flex-col container justify-center text-center">
               <h1 className="font-semibold text-4xl pt-52">
                 Pilih produk sesuai kebutuhan kamu
@@ -179,7 +190,7 @@ export default function Home() {
         {/*start tentang kami */}
         <section id="tentang-kami">
           <div className="bg-gray-600 py-7">
-            <div className="flex flex-col container pb-5">
+            <div className="container">
               <Dropbox />
             </div>
           </div>
