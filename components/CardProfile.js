@@ -23,9 +23,7 @@ export default function CardProfile({ pic, f_nama, f_nim, b_title }) {
             <div className="flip-card-back">
               <p className="title">{b_title}</p>
               <ul>
-                <li>
-                  <Image src={""} />
-                </li>
+                <li>{/* <Image src={""} /> */}</li>
               </ul>
             </div>
           </div>

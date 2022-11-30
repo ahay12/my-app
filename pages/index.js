@@ -1,13 +1,12 @@
-import Dropbox from "../components/Dropbox";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Dropbox from "../components/Dropbox";
 import CardHero from "../components/CardHero";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import Slider from "../components/Slider";
 import Popup from "../components/Popup";
-import React from "react";
-import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 export default function Home() {
   return (
     <>
@@ -15,7 +14,11 @@ export default function Home() {
         {/* Start Hero */}
         <section
           id="section-hero"
-          className="w-screen h-auto pt-36 pb-10 bg-[url('/family.jpg')] lg:bg-cover hero"
+          className="w-auto h-auto pt-36 pb-10"
+          style={{
+            backgroundImage: `url(${"/background.jpg"})`,
+            backgroundSize: "cover",
+          }}
         >
           <div className="container">
             <div className="w-full items-center lg:w-1/2">
@@ -27,10 +30,8 @@ export default function Home() {
               </h1>
             </div>
             <div className="mt-5 mb-5">
-              <div>
-                <div className="text-white text-2xl border-b-4 border-orange-400 w-44">
-                  Daftar Asuransi
-                </div>
+              <div className="text-white text-2xl border-b-4 border-orange-400 w-44">
+                Daftar Asuransi
               </div>
             </div>
             <div className="flex lg:flex-row  md:flex-row sm:flex-col">
@@ -68,7 +69,7 @@ export default function Home() {
                 discount="Diskon 10%"
               />
             </div>
-            <div className="mt-32">
+            <div className="mt-[80px]">
               <Link href={"#produk"}>
                 <div className="text-white w-60 h-16 bg-orange-400 rounded-lg transition hover:bg-white hover:text-orange-400">
                   <div className="items-center justify-around pl-7 pt-5">
@@ -151,36 +152,65 @@ export default function Home() {
         </section>
         {/* End Produk */}
 
-        <section className="pb-32">
-          <div className="w-full h-96">
-            <h1 className="font-heletica text-4xl container font-semibold pt-20">
-              Yang beda dari lain
-            </h1>
-            <div className="container pt-32 pb-32">
-              <div className="flex flex-row">
-                <div className="px-5">
-                  <Image src={"/innovation.png"} width={100} height={50} />
-                  <h1 className="text-2xl font-bold">Produk yang inovatif</h1>
-                  <p>
-                    Kami menawarkan produk yang mudah dipahami dengan sedikit
-                    pengecualian
-                  </p>
+        <section>
+          <div className="w-full h-auto">
+            <div className="container">
+              <div className="flex flex-rows">
+                <div className="flex flex-cols">
+                  <div className="mt-32">
+                    <h1 className="font-heletica text-2xl font-semibold pt-20 ml-8">
+                      Yang beda dari lain
+                    </h1>
+                    <Image src="/vector1.jpg" width={370} height={100} />
+                  </div>
                 </div>
-                <div>
-                  <Image src={"/hourglass.png"} width={100} height={50} />
-                  <h1 className="text-2xl font-bold">Proses claim mudah</h1>
-                  <p>
-                    Kami menawarkan produk yang mudah dipahami dengan sedikit
-                    pengecualian
-                  </p>
-                </div>
-                <div>
-                  <Image src={"/digital.png"} width={100} height={50} />
-                  <h1 className="text-2xl font-bold">Asuransi digital</h1>
-                  <p>
-                    Kami menawarkan produk yang mudah dipahami dengan sedikit
-                    pengecualian
-                  </p>
+                <div className="container pt-32 pb-32 pl-20">
+                  <div className="grid grid-cols-2 gap-8">
+                    <div className="p-6 h-64 w-full bg-gray-300 shadow-lg rounded-lg">
+                      <Image src={"/innovation.png"} width={100} height={50} />
+                      <h1 className="text-2xl font-bold">
+                        Produk yang inovatif
+                      </h1>
+                      <p>
+                        Kami menawarkan produk yang mudah dipahami dengan
+                        sedikit pengecualian
+                      </p>
+                    </div>
+                    <div className="p-6 h-64 w-full bg-gray-300 shadow-lg rounded-lg">
+                      <div>
+                        <Image src={"/hourglass.png"} width={100} height={50} />
+                        <h1 className="text-2xl font-bold">
+                          Proses claim mudah
+                        </h1>
+                        <p>
+                          Kami menawarkan produk yang mudah dipahami dengan
+                          sedikit pengecualian
+                        </p>
+                      </div>
+                    </div>
+                    <div className="p-6 h-64 w-full bg-gray-300 shadow-lg rounded-lg">
+                      <div>
+                        <Image src={"/digital.png"} width={100} height={50} />
+                        <h1 className="text-2xl font-bold">Asuransi digital</h1>
+                        <p>
+                          Kami menawarkan produk yang mudah dipahami dengan
+                          sedikit pengecualian
+                        </p>
+                      </div>
+                    </div>
+                    <div className="p-6 h-64 w-full bg-gray-300 shadow-lg rounded-lg">
+                      <div>
+                        <Image src={"/digital.png"} width={100} height={50} />
+                        <h1 className="text-2xl font-bold">
+                          Customer Service 24/7
+                        </h1>
+                        <p>
+                          Kami menawarkan produk yang mudah dipahami dengan
+                          sedikit pengecualian
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

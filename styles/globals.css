@@ -139,14 +139,10 @@ body {
   
 }
 
-.orange {
-  background-color: rgb(251 146 60);
-}
-
-#title-hero {
+/* #title-hero {
   text-shadow: 0 0 1px black;
   backdrop-filter: blur(2px) 
-}
+} */
 
 #section-hero {
   animation: 0.9s ease-in;

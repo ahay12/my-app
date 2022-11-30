@@ -8,11 +8,16 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 export default function Dropbox() {
   return (
     <div>
-      <Accordion className="text-white orange">
+      <Accordion
+        style={{
+          backgroundColor: "rgb(251 146 60)",
+        }}
+        className="text-white orange"
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
-          id="panel1a-header" 
+          id="panel1a-header"
         >
           <Typography>Tentang Kami</Typography>
         </AccordionSummary>
@@ -52,7 +57,12 @@ export default function Dropbox() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion className="text-white orange">
+      <Accordion
+        style={{
+          backgroundColor: "rgb(251 146 60)",
+        }}
+        className="text-white orange"
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
