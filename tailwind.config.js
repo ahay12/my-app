@@ -14,7 +14,9 @@ module.exports = {
       margin: {
         900: "910px",
       },
+      
       screens: {
+        "xs": "400px",
         "2xl": "1280px",
       },
     },

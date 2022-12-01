@@ -45,6 +45,7 @@ export default function Slider() {
         <div
           style={{
             backgroundImage: `url(${"/event1.jpeg"})`,
+            backgroundSize: "cover",
           }}
           className="keen-slider__slide number-slide1 flex flex-col items-start"
         >
@@ -78,6 +79,7 @@ export default function Slider() {
         <div
           style={{
             backgroundImage: `url(${""})`,
+            backgroundSize: "fit",
           }}
           className="keen-slider__slide number-slide3 flex flex-col items-start"
         >

@@ -24,7 +24,7 @@ export default function Home() {
             <div className="w-full items-center lg:w-1/2">
               <h1
                 id="title-hero"
-                className="font-bold text-6xl text-white mt-12"
+                className="font-bold lg:text-6xl xs:text-4xl text-white mt-12"
               >
                 Mengubah cara pandang masyarakat tentang asuransi
               </h1>
@@ -34,7 +34,7 @@ export default function Home() {
                 Daftar Asuransi
               </div>
             </div>
-            <div className="flex lg:flex-row  md:flex-row sm:flex-col">
+            <div className="lg:flex lg:flex-row xs:grid xs:grid-cols-2">
               <CardHero
                 selector={"card1"}
                 link={""}
@@ -86,18 +86,18 @@ export default function Home() {
         <section>
           <div className="w-full h-32 bg-white">
             <div className="container">
-              <div className="flex flex-row justify-center opacity-70">
-                <div className="w-2/12 py-2">
-                  <Image src={"/OJK_Logo.png"} width={150} height={100} />
+              <div className="grid grid-cols-4 gap-5 justify-items-center opacity-70">
+                <div className="mt-5">
+                  <Image src={"/OJK_Logo.png"} width={150} height={150} />
                 </div>
-                <div className="w-2/12 py-2 -mt-10">
-                  <Image src={"/narasi.png"} width={150} height={100} />
+                <div className="mt-3">
+                  <Image src={"/narasi.png"} width={150} height={150} />
                 </div>
-                <div className="w-2/12 py-2 mt-8">
-                  <Image src={"/gotofinancial.png"} width={150} height={100} />
+                <div className="mt-10">
+                  <Image src={"/gotofinancial.png"} width={150} height={150} />
                 </div>
-                <div className="w-2/12 py-2 mt-7">
-                  <Image src={"/ternakuang.png"} width={150} height={100} />
+                <div className="mt-10">
+                  <Image src={"/ternakuang.png"} width={150} height={150} />
                 </div>
               </div>
             </div>
@@ -117,10 +117,10 @@ export default function Home() {
         <section id="produk">
           <div className="w-full h-auto bg-gray-300 pb-10">
             <div className="flex flex-col container justify-center text-center">
-              <h1 className="font-semibold text-4xl pt-52">
+              <h1 className="font-semibold lg:text-4xl pt-52">
                 Pilih produk sesuai kebutuhan kamu
               </h1>
-              <div className="flex flex-row justify-center">
+              <div className="lg:flex lg:flex-row xs:grid xs:grid-cols-2 justify-center">
                 <Popup
                   title={"Asuransi Jiwa"}
                   titleChd={"Asuransi Jiwa"}
@@ -155,59 +155,75 @@ export default function Home() {
         <section>
           <div className="w-full h-auto">
             <div className="container">
-              <div className="flex flex-rows">
+              <div className="lg:flex lg:flex-rows">
                 <div className="flex flex-cols">
                   <div className="mt-32">
-                    <h1 className="font-heletica text-2xl font-semibold pt-20 ml-8">
+                    <h1 className="font-heletica text-2xl font-semibold lg:pt-20 text-center">
                       Yang beda dari lain
                     </h1>
                     <Image src="/vector1.jpg" width={370} height={100} />
                   </div>
                 </div>
-                <div className="container pt-32 pb-32 pl-20">
-                  <div className="grid grid-cols-2 gap-8">
-                    <div className="p-6 h-64 w-full bg-gray-300 shadow-lg rounded-lg">
-                      <Image src={"/innovation.png"} width={100} height={50} />
-                      <h1 className="text-2xl font-bold">
-                        Produk yang inovatif
-                      </h1>
-                      <p>
-                        Kami menawarkan produk yang mudah dipahami dengan
-                        sedikit pengecualian
-                      </p>
-                    </div>
-                    <div className="p-6 h-64 w-full bg-gray-300 shadow-lg rounded-lg">
-                      <div>
-                        <Image src={"/hourglass.png"} width={100} height={50} />
-                        <h1 className="text-2xl font-bold">
-                          Proses claim mudah
+                <div className="container">
+                  <div className="pt-32 pb-32 lg:pl-20">
+                    <div className="lg:grid lg:grid-cols-2 xs:grid xs:grid-cols-1 sm:gap-3 gap-8">
+                      <div className="p-6 h-64 w-full bg-gray-300 shadow-lg rounded-lg">
+                        <Image
+                          src={"/innovation.png"}
+                          width={100}
+                          height={50}
+                        />
+                        <h1 className="lg:text-2xl font-bold">
+                          Produk yang inovatif
                         </h1>
                         <p>
                           Kami menawarkan produk yang mudah dipahami dengan
                           sedikit pengecualian
                         </p>
                       </div>
-                    </div>
-                    <div className="p-6 h-64 w-full bg-gray-300 shadow-lg rounded-lg">
-                      <div>
-                        <Image src={"/digital.png"} width={100} height={50} />
-                        <h1 className="text-2xl font-bold">Asuransi digital</h1>
-                        <p>
-                          Kami menawarkan produk yang mudah dipahami dengan
-                          sedikit pengecualian
-                        </p>
+                      <div className="p-6 h-64 w-full bg-gray-300 shadow-lg rounded-lg">
+                        <div>
+                          <Image
+                            src={"/hourglass.png"}
+                            width={100}
+                            height={50}
+                          />
+                          <h1 className="lg:text-2xl font-bold">
+                            Proses claim mudah
+                          </h1>
+                          <p>
+                            Kami menawarkan produk yang mudah dipahami dengan
+                            sedikit pengecualian
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="p-6 h-64 w-full bg-gray-300 shadow-lg rounded-lg">
-                      <div>
-                        <Image src={"/digital.png"} width={100} height={50} />
-                        <h1 className="text-2xl font-bold">
-                          Customer Service 24/7
-                        </h1>
-                        <p>
-                          Kami menawarkan produk yang mudah dipahami dengan
-                          sedikit pengecualian
-                        </p>
+                      <div className="p-6 h-64 w-full bg-gray-300 shadow-lg rounded-lg">
+                        <div>
+                          <Image src={"/digital.png"} width={100} height={50} />
+                          <h1 className="lg:text-2xl font-bold">
+                            Asuransi digital
+                          </h1>
+                          <p>
+                            Kami menawarkan produk yang mudah dipahami dengan
+                            sedikit pengecualian
+                          </p>
+                        </div>
+                      </div>
+                      <div className="p-6 h-64 w-full bg-gray-300 shadow-lg rounded-lg">
+                        <div>
+                          <Image
+                            src={"/24-hours.png"}
+                            width={100}
+                            height={50}
+                          />
+                          <h1 className="lg:text-2xl font-bold">
+                            Customer Service 24/7
+                          </h1>
+                          <p className="">
+                            Kami menawarkan produk yang mudah dipahami dengan
+                            sedikit pengecualian
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>

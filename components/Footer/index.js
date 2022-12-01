@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer>
-      <div className="bg-gray-700  w-full h-[350px]">
-        <div className="text-white container flex flex-row">
+      <div className="bg-gray-700  w-auto h-auto">
+        <div className="text-white container lg:flex lg:flex-row">
           <div className="pt-20">
             <Image src={"/logo-fix.png"} width={500} height={500} />
             <h3 className="text-orange-400 ml-2">Bumi Samudra insurance</h3>
