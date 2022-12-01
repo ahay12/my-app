@@ -46,7 +46,7 @@ export default function TransitionsModal({ title, img, titleChd }) {
         }}
       >
         <Fade in={open}>
-          <Box sx={style}>
+          <Box className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] lg:w-[800px] bg-white border border-black shadow-md p-4 flex flex-col">
             <Typography id="transition-modal-title" variant="h6" component="h2">
               {titleChd}
             </Typography>

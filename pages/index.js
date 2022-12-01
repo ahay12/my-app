@@ -107,7 +107,7 @@ export default function Home() {
         {/* End lisensi */}
 
         {/* Start Carousel */}
-        <section>
+        <section className="hp:hidden md:inline">
           <div className="z-0 relative w-full h-64 container rounded-lg -mb-36 text-4xl text-center">
             <Slider />
           </div>
@@ -168,7 +168,7 @@ export default function Home() {
                 <div className="container">
                   <div className="pt-32 pb-32 lg:pl-20">
                     <div className="lg:grid lg:grid-cols-2 xs:grid xs:grid-cols-1 sm:gap-3 gap-8">
-                      <div className="p-6 h-64 w-full bg-gray-300 shadow-lg rounded-lg">
+                      <div className="p-6 lg:h-64 w-full bg-gray-300 shadow-lg rounded-lg hp:mb-3">
                         <Image
                           src={"/innovation.png"}
                           width={100}
@@ -182,7 +182,7 @@ export default function Home() {
                           sedikit pengecualian
                         </p>
                       </div>
-                      <div className="p-6 h-64 w-full bg-gray-300 shadow-lg rounded-lg">
+                      <div className="p-6 h-64 w-full bg-gray-300 shadow-lg rounded-lg hp:mb-3">
                         <div>
                           <Image
                             src={"/hourglass.png"}
@@ -198,7 +198,7 @@ export default function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="p-6 h-64 w-full bg-gray-300 shadow-lg rounded-lg">
+                      <div className="p-6 h-64 w-full bg-gray-300 shadow-lg rounded-lg hp:mb-3">
                         <div>
                           <Image src={"/digital.png"} width={100} height={50} />
                           <h1 className="lg:text-2xl font-bold">
@@ -210,7 +210,7 @@ export default function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="p-6 h-64 w-full bg-gray-300 shadow-lg rounded-lg">
+                      <div className="p-6 h-64 w-full bg-gray-300 shadow-lg rounded-lg hp:mb-3">
                         <div>
                           <Image
                             src={"/24-hours.png"}

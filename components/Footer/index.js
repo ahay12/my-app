@@ -5,14 +5,10 @@ export default function Footer() {
   return (
     <footer>
       <div className="bg-gray-700  w-auto h-auto pb-6">
-        <div className="text-white container lg:flex lg:flex-row">
-          <div className="pt-20">
-            <Image src={"/logo-fix.png"} width={500} height={500} />
-            <h3 className="text-orange-400 ml-2">Bumi Samudra insurance</h3>
-          </div>
-          <div className="text-white container flex flex-col px-10 pt-3">
-            <h1 className="text-4xl">Services</h1>
-            <ul className="py-6">
+        <div className="text-white container lg:flex lg:flex-row hp:flex hp:flex-cols">
+          <div className="text-white container flex flex-col lg:px-10 pt-3">
+            <h1 className="lg:text-4xl hp:text-2xl">Services</h1>
+            <ul className="py-6 hp:py-1">
               <li>Layanan Digital</li>
               <li>Layanan Klaim</li>
               <li>Kelola Polis</li>
@@ -22,9 +18,9 @@ export default function Footer() {
               <li>Informasi Nasabah</li>
             </ul>
           </div>
-          <div className="text-white container flex flex-col px-10 pt-3">
-            <h1 className="text-4xl">Solution</h1>
-            <ul className="py-6">
+          <div className="text-white container flex flex-col lg:px-10 pt-3">
+            <h1 className="lg:text-4xl hp:text-2xl">Solution</h1>
+            <ul className="py-6 hp:py-1">
               <li>Proteksi Jiwa</li>
               <li>Kesehatan</li>
               <li>Perlindungan dan Tabungan</li>
@@ -32,9 +28,9 @@ export default function Footer() {
               <li>Korporasi</li>
             </ul>
           </div>
-          <div className="text-white container flex flex-col px-10 pt-3">
-            <h1 className="text-4xl">About Us</h1>
-            <ul className="py-6">
+          <div className="text-white container flex flex-col lg:px-10 pt-3">
+            <h1 className="lg:text-4xl hp:hidden md:inline">About Us</h1>
+            <ul className="py-6 hp:hidden md:inline">
               <li>Tentang Kami</li>
               <li>Management</li>
               <li>Laporan Keuangan</li>
@@ -45,7 +41,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="container">
-          <div className="grid grid-cols-2 justify-items-center">
+          <div className="lg:grid lg:grid-cols-2 justify-items-center">
             <div>
               <p className="text-white mt-3">
                 Syarat Penggunaan | Kebijakan Privasi | Hubungi Kami
