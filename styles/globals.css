@@ -110,13 +110,11 @@ a {
     color: black;
     background: white;
   }
-}
+} 
 
-/* body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  min-height: 100%;
-} */
+footer {
+  margin: 0;
+}
 
 [class^="number-slide"],
 [class*=" number-slide"] {
