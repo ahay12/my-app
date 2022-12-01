@@ -54,7 +54,7 @@ export default function TransitionsModal({ title, img, titleChd }) {
               <CardProduct link={""}>
                 <div className="flex flex-col items-center pt-10 font-semibold">
                   <Image src={"/health.svg"} width={70} height={100} />
-                  <h1>Asuransi Jiwa Lite</h1>
+                  <h1>Asuransi Jiwa Lite</h1> 
                 </div>
               </CardProduct>
               <CardProduct link={""}>

@@ -27,7 +27,8 @@ export default function Home() {
                 id="title-hero"
                 className="font-bold lg:text-6xl xs:text-4xl text-white mt-12"
               >
-                Mengubah cara pandang masyarakat tentang asuransi
+                Mengubah cara pandang masyarakat tentang{" "}
+                <span className="text-orange-400">asuransi</span>
               </h1>
             </div>
             <div className="mt-5 mb-5">

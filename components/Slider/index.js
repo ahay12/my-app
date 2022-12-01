@@ -44,6 +44,13 @@ export default function Slider() {
       <div ref={sliderRef} className="keen-slider rounded-lg shadow-lg">
         <div
           style={{
+            backgroundImage: `url(${"/belajar-asuransi.gif"})`,
+            backgroundSize: "fit",
+          }}
+          className="keen-slider__slide number-slide3 flex flex-col items-start"
+        ></div>
+        <div
+          style={{
             backgroundImage: `url(${"/event1.jpeg"})`,
             backgroundSize: "cover",
           }}
@@ -60,15 +67,18 @@ export default function Slider() {
         <div
           style={{
             backgroundImage: `url(${"/eventgif.gif"})`,
-            backgroundSize: "cover"
+            backgroundSize: "cover",
           }}
           className="keen-slider__slide number-slide2 flex flex-col items-start"
         >
           <div className="grid grid-cols-12">
             <div className="col-end-10 col-span-2 mt-36">
-              <button style={{
-                opacity: "1",
-              }} className="mt-20 ml-20">
+              <button
+                style={{
+                  opacity: "1",
+                }}
+                className="mt-20 ml-20"
+              >
                 <p className="animate-bounce text-base w-32 h-10 pt-2 text-center font-bold bg-black text-white">
                   Lihat Hadiah
                 </p>
@@ -78,7 +88,7 @@ export default function Slider() {
         </div>
         <div
           style={{
-            backgroundImage: `url(${""})`,
+            backgroundImage: `url(${"/prize.gif"})`,
             backgroundSize: "fit",
           }}
           className="keen-slider__slide number-slide3 flex flex-col items-start"
