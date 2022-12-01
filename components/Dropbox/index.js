@@ -11,8 +11,8 @@ export default function Dropbox() {
       <Accordion
         style={{
           backgroundColor: "rgb(251 146 60)",
+          color: "#fff",
         }}
-        className="text-white orange"
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -60,8 +60,8 @@ export default function Dropbox() {
       <Accordion
         style={{
           backgroundColor: "rgb(251 146 60)",
+          color: "#fff",
         }}
-        className="text-white orange"
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

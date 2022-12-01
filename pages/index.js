@@ -84,20 +84,20 @@ export default function Home() {
 
         {/* Start lisensi */}
         <section>
-          <div className="w-full h-64 bg-white">
+          <div className="w-full h-32 bg-white">
             <div className="container">
               <div className="flex flex-row justify-center opacity-70">
                 <div className="w-2/12 py-2">
                   <Image src={"/OJK_Logo.png"} width={150} height={100} />
                 </div>
-                <div className="w-2/12 py-2">
-                  <Image src={"/OJK_Logo.png"} width={150} height={100} />
+                <div className="w-2/12 py-2 -mt-10">
+                  <Image src={"/narasi.png"} width={150} height={100} />
                 </div>
-                <div className="w-2/12 py-2">
-                  <Image src={"/OJK_Logo.png"} width={150} height={100} />
+                <div className="w-2/12 py-2 mt-8">
+                  <Image src={"/gotofinancial.png"} width={150} height={100} />
                 </div>
-                <div className="w-2/12 py-2">
-                  <Image src={"/OJK_Logo.png"} width={150} height={100} />
+                <div className="w-2/12 py-2 mt-7">
+                  <Image src={"/ternakuang.png"} width={150} height={100} />
                 </div>
               </div>
             </div>

@@ -50,7 +50,7 @@ export default function Slider() {
         >
           <div>
             <button className="mt-60 ml-20">
-              <p className="text-base w-32 h-10 text-center pt-2 font-bold bg-white text-orange-400">
+              <p className="animate-bounce text-base w-32 h-10 text-center pt-2 font-bold bg-white text-orange-400">
                 Cek Event
               </p>
             </button>
@@ -68,7 +68,7 @@ export default function Slider() {
               <button style={{
                 opacity: "1",
               }} className="mt-20 ml-20">
-                <p className="text-base w-32 h-10 pt-2 text-center font-bold bg-black text-white">
+                <p className="animate-bounce text-base w-32 h-10 pt-2 text-center font-bold bg-black text-white">
                   Lihat Hadiah
                 </p>
               </button>
@@ -77,7 +77,7 @@ export default function Slider() {
         </div>
         <div
           style={{
-            backgroundImage: `url(${"/event3.jpeg"})`,
+            backgroundImage: `url(${""})`,
           }}
           className="keen-slider__slide number-slide3 flex flex-col items-start"
         >
@@ -89,7 +89,7 @@ export default function Slider() {
               Our Insurance Lucky Draw
             </h1>
             <button className="mt-20 -ml-64">
-              <p className="text-base w-32 h-10 pt-2 text-center font-bold bg-white text-orange-400">
+              <p className="animate-bounce text-base w-32 h-10 pt-2 text-center font-bold bg-white text-orange-400">
                 Lihat Hadiah
               </p>
             </button>

@@ -112,12 +112,11 @@ a {
   }
 }
 
-body {
-  margin: 0;
+/* body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100%;
-}
+} */
 
 [class^="number-slide"],
 [class*=" number-slide"] {
