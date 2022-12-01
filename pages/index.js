@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import Slider from "../components/Slider";
 import Popup from "../components/Popup";
+
 export default function Home() {
   return (
     <>
@@ -16,7 +17,7 @@ export default function Home() {
           id="section-hero"
           className="w-auto h-auto pt-36 pb-10"
           style={{
-            backgroundImage: `url(${"/background.jpg"})`,
+            backgroundImage: `url(${"/background-hero.png"})`,
             backgroundSize: "cover",
           }}
         >
@@ -69,7 +70,7 @@ export default function Home() {
                 discount="Diskon 10%"
               />
             </div>
-            <div className="mt-[80px]">
+            <div className="mt-[80px] flex flex-row">
               <Link href={"#produk"}>
                 <div className="text-white w-60 h-16 bg-orange-400 rounded-lg transition hover:bg-white hover:text-orange-400">
                   <div className="items-center justify-around pl-7 pt-5">
@@ -87,10 +88,10 @@ export default function Home() {
           <div className="w-full h-32 bg-white">
             <div className="container">
               <div className="grid grid-cols-4 gap-5 justify-items-center opacity-70">
-                <div className="mt-5">
+                <div className="mt-4">
                   <Image src={"/OJK_Logo.png"} width={150} height={150} />
                 </div>
-                <div className="mt-3">
+                <div className="mt-1">
                   <Image src={"/narasi.png"} width={150} height={150} />
                 </div>
                 <div className="mt-10">
