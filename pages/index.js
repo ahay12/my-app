@@ -16,69 +16,76 @@ export default function Home() {
         <section
           id="section-hero"
           className="w-auto h-auto pt-36 pb-10"
-          style={{
-            backgroundImage: `url(${"/background-hero.png"})`,
-            backgroundSize: "cover",
-          }}
+          // style={{
+          //   backgroundImage: `url(${"/background-hero.png"})`,
+          //   backgroundSize: "cover",
+          // }}
         >
-          <div className="container">
-            <div className="w-full items-center lg:w-1/2">
-              <h1
-                id="title-hero"
-                className="font-bold lg:text-6xl xs:text-4xl text-white mt-12"
-              >
-                Mengubah cara pandang masyarakat tentang{" "}
-                <span className="text-orange-400">asuransi</span>
-              </h1>
-            </div>
-            <div className="mt-5 mb-5">
-              <div className="text-white text-2xl border-b-4 border-orange-400 w-44">
-                Daftar Asuransi
+          <div className="-z-0">
+            <Image
+              src={"/background-hero.png"}
+              layout="fill"
+              objectFit="cover"
+            />{" "}
+            <div className="container">
+              <div className="w-full relative items-center lg:w-1/2 z-10">
+                <h1
+                  id="title-hero"
+                  className="font-bold lg:text-6xl xs:text-4xl text-white mt-12"
+                >
+                  Mengubah cara pandang masyarakat tentang{" "}
+                  <span className="text-orange-400">asuransi</span>
+                </h1>
               </div>
-            </div>
-            <div className="lg:flex lg:flex-row xs:grid xs:grid-cols-2">
-              <CardHero
-                selector={"card1"}
-                link={""}
-                con={"/health.svg"}
-                title="Asuransi Jiwa"
-                description="Bebas Rencana"
-                discount="Diskon 20%"
-              />
-              <CardHero
-                selector={"card2"}
-                link={""}
-                con={"/card.svg"}
-                title="Asuransi Kesehatan"
-                description="Asuransi Bebas Handal"
-                discount="Diskon 15%"
-              />
-
-              <CardHero
-                selector={"card3"}
-                link={""}
-                con={"/chair.svg"}
-                title="Asuransi Jiwa"
-                description="Bebas Rencana"
-                discount="Diskon 30%"
-              />
-              <CardHero
-                selector={"card4"}
-                link={""}
-                con={"/note.svg"}
-                title="Asuransi Jiwa"
-                description="Bebas Rencana"
-                discount="Diskon 10%"
-              />
-            </div>
-            <div className="mt-[80px] flex flex-row">
-              <Link href={"#produk"}>
-                <div className="text-white w-60 h-16 bg-orange-400 rounded-lg transition hover:bg-white hover:text-orange-400">
-                  <div className="items-center justify-around pl-7 pt-5">
-                    <h4 className="font-bold">Temukan Produk Lainnya</h4>
-                  </div>
+              <div className="mt-5 mb-5">
+                <div className="relative text-white text-2xl border-b-4 border-orange-400 w-44">
+                  Daftar Asuransi
                 </div>
-              </Link>
+              </div>
+              <div className="relative z-20 lg:flex lg:flex-row xs:grid xs:grid-cols-2">
+                <CardHero
+                  selector={"card1"}
+                  link={""}
+                  con={"/health.svg"}
+                  title="Asuransi Jiwa"
+                  description="Bebas Rencana"
+                  discount="Diskon 20%"
+                />
+                <CardHero
+                  selector={"card2"}
+                  link={""}
+                  con={"/card.svg"}
+                  title="Asuransi Kesehatan"
+                  description="Asuransi Bebas Handal"
+                  discount="Diskon 15%"
+                />
+
+                <CardHero
+                  selector={"card3"}
+                  link={""}
+                  con={"/chair.svg"}
+                  title="Asuransi Jiwa"
+                  description="Bebas Rencana"
+                  discount="Diskon 30%"
+                />
+                <CardHero
+                  selector={"card4"}
+                  link={""}
+                  con={"/note.svg"}
+                  title="Asuransi Jiwa"
+                  description="Bebas Rencana"
+                  discount="Diskon 10%"
+                />
+              </div>
+              <div className="relative mt-[80px] flex flex-row">
+                <Link href={"#produk"}>
+                  <div className="text-white w-60 h-16 bg-orange-400 rounded-lg transition hover:bg-white hover:text-orange-400">
+                    <div className="items-center justify-around pl-7 pt-5">
+                      <h4 className="font-bold">Temukan Produk Lainnya</h4>
+                    </div>
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
