@@ -15,7 +15,7 @@ export default function Home() {
         {/* Start Hero */}
         <section
           id="section-hero"
-          className="w-auto h-auto pt-36 pb-10"
+          className="relative w-auto h-auto pt-36 pb-10"
           // style={{
           //   backgroundImage: `url(${"/background-hero.png"})`,
           //   backgroundSize: "cover",
