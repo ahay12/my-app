@@ -7,7 +7,9 @@ export default function Footer() {
       <div className="bg-gray-700  w-auto h-auto pb-6">
         <div className="text-white container lg:flex lg:flex-row hp:flex hp:flex-cols">
           <div className="text-white container flex flex-col lg:px-10 pt-3">
-            <h1 className="lg:text-4xl hp:text-2xl">Services</h1>
+            <h1 className="lg:text-4xl hp:text-2xl border-b-4 w-1/2 border-orange-400">
+              Services
+            </h1>
             <ul className="py-6 hp:py-1">
               <li className="hover:text-orange-400">Layanan Digital</li>
               <li className="hover:text-orange-400">Layanan Klaim</li>
@@ -19,7 +21,9 @@ export default function Footer() {
             </ul>
           </div>
           <div className="text-white container flex flex-col lg:px-10 pt-3">
-            <h1 className="lg:text-4xl hp:text-2xl">Solution</h1>
+            <h1 className="lg:text-4xl hp:text-2xl border-b-4 w-1/2 border-orange-400">
+              Solution
+            </h1>
             <ul className="py-6 hp:py-1">
               <li className="hover:text-orange-400">Proteksi Jiwa</li>
               <li className="hover:text-orange-400">Kesehatan</li>
@@ -31,7 +35,9 @@ export default function Footer() {
             </ul>
           </div>
           <div className="text-white container flex flex-col lg:px-10 pt-3">
-            <h1 className="lg:text-4xl hp:hidden md:inline">About Us</h1>
+            <h1 className="lg:text-4xl hp:hidden md:inline border-b-4 w-1/2 border-orange-400">
+              About Us
+            </h1>
             <ul className="py-6 hp:hidden md:inline">
               <li className="hover:text-orange-400">Tentang Kami</li>
               <li className="hover:text-orange-400">Management</li>
@@ -42,8 +48,8 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="container">
-          <div className="lg:grid lg:grid-cols-2 justify-items-center">
+        <div className="container border-t-2 border-orange-400">
+          <div className="lg:grid lg:grid-cols-2 justify-items-center mt-5">
             <div>
               <p className="text-white mt-3">
                 <span className="hover:text-orange-400">Syarat Penggunaan</span>{" "}
@@ -83,6 +89,10 @@ export default function Footer() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="w-full h-12 bg-black text-white flex justify-center py-12 select-none">
+        Powered By <span className="ml-1 text-orange-400">Bumi Samdra Insurance</span>
+        <img src="/logo-fix.png" className="object-contain w-[64px] h-[32px] -mt-1 -ml-3"></img>
       </div>
     </footer>
   );

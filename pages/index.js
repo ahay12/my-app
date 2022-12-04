@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import Dropbox from "../components/Dropbox";
 import CardHero from "../components/CardHero";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import Slider from "../components/Slider";
 import Popup from "../components/Popup";
+import CardBox from "../components/CardBox";
 
 export default function Home() {
   return (
@@ -78,13 +78,14 @@ export default function Home() {
                 />
               </div>
               <div className="relative mt-[80px] flex flex-row">
-                <Link href={"#produk"}>
+                <a href="/#produk">
                   <div className="text-white w-60 h-16 bg-orange-400 rounded-lg transition hover:bg-white hover:text-orange-400">
                     <div className="items-center justify-around pl-7 pt-5">
                       <h4 className="font-bold">Temukan Produk Lainnya</h4>
                     </div>
                   </div>
-                </Link>
+                </a>
+                {/* <Link href={"#produk"}></Link> */}
               </div>
             </div>
           </div>
@@ -96,7 +97,7 @@ export default function Home() {
           <div className="w-full h-32 bg-white">
             <div className="container">
               <div className="grid grid-cols-4 gap-5 justify-items-center opacity-70">
-                <div className="mt-4">
+                <div className="mt-2">
                   <Image src={"/OJK_Logo.png"} width={150} height={150} />
                 </div>
                 <div className="mt-1">
@@ -134,27 +135,109 @@ export default function Home() {
                   title={"Asuransi Jiwa"}
                   titleChd={"Asuransi Jiwa"}
                   img={"/health.svg"}
-                />
+                >
+                  <CardBox
+                    cb_img={"/health.svg"}
+                    cb_title={"Asuransi Jiwa Lite"}
+                  />
+                  <CardBox cb_img={"/health.svg"} cb_title={"Asuransi Jiwa"} />
+                  <CardBox
+                    cb_img={"/health.svg"}
+                    cb_title={"Asuransi Jiwa Pro"}
+                  />
+                  <CardBox
+                    cb_img={"/health.svg"}
+                    cb_title={"Asuransi Jiwa VIP"}
+                  />
+                </Popup>
                 <Popup
                   title={"Asuransi Kesehatan"}
                   titleChd={"Asuransi Kesehatan"}
                   img={"/card.svg"}
-                />
+                >
+                  <CardBox
+                    cb_img={"/card.svg"}
+                    cb_title={"Asuransi Kesehatan Lite"}
+                  />
+                  <CardBox
+                    cb_img={"/card.svg"}
+                    cb_title={"Asuransi Kesehatan"}
+                  />
+                  <CardBox
+                    cb_img={"/card.svg"}
+                    cb_title={"Asuransi Kesehatan Pro"}
+                  />
+                  <CardBox
+                    cb_img={"/card.svg"}
+                    cb_title={"Asuransi Kesehatan VIP"}
+                  />
+                </Popup>
                 <Popup
                   title={"Asuransi Kecelakaan Diri"}
                   titleChd={"Asuransi Kecelakaan Diri"}
                   img={"/note.svg"}
-                />
+                >
+                  <CardBox
+                    cb_img={"/note.svg"}
+                    cb_title={"Asuransi Kecelakaan Diri Lite"}
+                  />
+                  <CardBox
+                    cb_img={"/note.svg"}
+                    cb_title={"Asuransi Kecelakaan Diri"}
+                  />
+                  <CardBox
+                    cb_img={"/note.svg"}
+                    cb_title={"Asuransi Kecelakaan Diri Pro"}
+                  />
+                  <CardBox
+                    cb_img={"/note.svg"}
+                    cb_title={"Asuransi Kecelakaan Diri VIP"}
+                  />
+                </Popup>
                 <Popup
                   title={"Asuransi Investasi"}
                   titleChd={"Asuransi Investasi"}
-                  img={"/note.svg"}
-                />
+                  img={"/investasi.svg"}
+                >
+                  <CardBox
+                    cb_img={"/investasi.svg"}
+                    cb_title={"Asuransi Investasi Lite"}
+                  />
+                  <CardBox
+                    cb_img={"/investasi.svg"}
+                    cb_title={"Asuransi Investasi"}
+                  />
+                  <CardBox
+                    cb_img={"/investasi.svg"}
+                    cb_title={"Asuransi Investasi Pro"}
+                  />
+                  <CardBox
+                    cb_img={"/investasi.svg"}
+                    cb_title={"Asuransi Investasi VIP "}
+                  />
+                </Popup>
                 <Popup
                   title={"Asuransi Pendidikan"}
                   titleChd={"Asuransi Pendidikan"}
                   img={"/chair.svg"}
-                />
+                >
+                  <CardBox
+                    cb_img={"/chair.svg"}
+                    cb_title={"Asuransi Pendidikan Lite"}
+                  />
+                  <CardBox
+                    cb_img={"/chair.svg"}
+                    cb_title={"Asuransi Pendidikan"}
+                  />
+                  <CardBox
+                    cb_img={"/chair.svg"}
+                    cb_title={"Asuransi Pendidikan Pro"}
+                  />
+                  <CardBox
+                    cb_img={"/chair.svg"}
+                    cb_title={"Asuransi Pendidikan VIP"}
+                  />
+                </Popup>
               </div>
             </div>
           </div>

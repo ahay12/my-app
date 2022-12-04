@@ -45,14 +45,14 @@ export default function Slider() {
         <div
           style={{
             backgroundImage: `url(${"/belajar-asuransi.gif"})`,
-            backgroundSize: "fit",
+            backgroundSize: "contain",
           }}
           className="keen-slider__slide number-slide3 flex flex-col items-start"
         ></div>
         <div
           style={{
             backgroundImage: `url(${"/event1.jpeg"})`,
-            backgroundSize: "cover",
+            backgroundSize: "contain",
           }}
           className="keen-slider__slide number-slide1 flex flex-col items-start"
         >
@@ -67,7 +67,7 @@ export default function Slider() {
         <div
           style={{
             backgroundImage: `url(${"/eventgif.gif"})`,
-            backgroundSize: "cover",
+            backgroundSize: "contain",
           }}
           className="keen-slider__slide number-slide2 flex flex-col items-start"
         >
@@ -89,7 +89,7 @@ export default function Slider() {
         <div
           style={{
             backgroundImage: `url(${"/prize.gif"})`,
-            backgroundSize: "fit",
+            backgroundSize: "contain",
           }}
           className="keen-slider__slide number-slide3 flex flex-col items-start"
         >
